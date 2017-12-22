@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hd5-9G-tP6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Awesome progress bar-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgressBar01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="a7s-1H-dHI">
+                                <rect key="frame" x="33.5" y="21.5" width="308" height="624"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="L6v-EU-qze">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eik-CX-0ee">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="04z-fd-0fy"/>
+                                                    <constraint firstAttribute="height" constant="150" id="z4c-QA-iYz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wuw-oX-9hb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6t-gf-BBA">
+                                                <rect key="frame" x="158" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="4Ce-Gn-tYM"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ZH0-92-gWf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jx-z0-b4b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PKO-84-mjE">
+                                        <rect key="frame" x="0.0" y="158" width="308" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4r-fG-Mga">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="3Kx-dc-sXz"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="aqV-EC-LFR"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hze-0R-F6c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzS-hB-fzn">
+                                                <rect key="frame" x="158" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="QFZ-Et-BKb"/>
+                                                    <constraint firstAttribute="height" constant="150" id="e0f-79-jUz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cd-oD-Cx8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-zG-r6T">
+                                        <rect key="frame" x="0.0" y="316" width="308" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-rw-nFw">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="bgp-4W-pZO"/>
+                                                    <constraint firstAttribute="height" constant="150" id="luy-AI-bVJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOj-1d-Rz9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNN-k9-ji6">
+                                                <rect key="frame" x="158" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="LLL-Zm-Urs"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tAR-Vw-qVE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDV-cy-ITQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-SE-PNm">
+                                        <rect key="frame" x="0.0" y="474" width="308" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0C-OO-JbA">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="7bR-aX-L7I"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="H07-ga-EDO"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcG-EI-sRr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaG-lj-M13">
+                                                <rect key="frame" x="158" y="0.0" width="150" height="150"/>
+                                                <color key="backgroundColor" red="0.86455570290132622" green="0.86455570290132622" blue="0.86455570290132622" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="KQE-mp-dBY"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="SDj-Qh-ELX"/>
+                                                </constraints>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.18646385939999999" green="0.18646385939999999" blue="0.18646385939999999" alpha="0.68541506900000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="anyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DyL-fL-bU5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7s-1H-dHI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-32" id="PZh-en-Zgg"/>
+                            <constraint firstItem="a7s-1H-dHI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bor-Wf-Y8n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Awesome progress bar" id="5v9-8b-xtq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="-16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1zG-sd-8at">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hd5-9G-tP6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JYn-OR-E6V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qur-9k-9t8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCs-Y4-Ji8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-235.19999999999999" y="-15.292353823088456"/>
+        </scene>
+    </scenes>
+</document>
